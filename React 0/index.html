@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>React Receita Zero</title>      
+   </head>
+   <body>
+      <div id="app">
+      
+      </div>
+      <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+      <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+      
+      <script>
+         ReactDOM.render(
+            React.createElement(
+                    'table', 
+                    {id: 'table'},
+                    React.createElement(
+                        'tr',
+                        null,
+                        React.createElement('th',null,'Estado'),
+                        React.createElement('th',null,'Sigla'),
+                        React.createElement('th',null,'Capital'),
+                    ),
+                    React.createElement(
+                        'tr',
+                        null,
+                        React.createElement('td',null,'Bahia'),
+                        React.createElement('td',null,'BA'),
+                        React.createElement('td',null,'Salvador'),
+                    ),
+                    React.createElement(
+                        'tr',
+                        null,
+                        React.createElement('td',null,'Rio Grande do Norte'),
+                        React.createElement('td',null,'RN'),
+                        React.createElement('td',null,'Natal'),
+                    ),
+                    React.createElement(
+                        'tr',
+                        null,
+                        React.createElement('td',null,'São Paulo'),
+                        React.createElement('td',null,'SP'),
+                        React.createElement('td',null,'São Paulo'),
+                    )
+                ),
+            document.getElementById('app')
+        );
+      </script>
+   </body>
+</html>
